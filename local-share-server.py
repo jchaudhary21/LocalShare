@@ -1,8 +1,11 @@
 from flask import Flask, request, redirect, render_template, send_from_directory
+from pathlib import Path
 import os
 
 app = Flask(__name__, static_folder='static')
-UPLOAD_FOLDER = '/home/jc/Desktop/advanceCopyPaste/uploads'
+curnt_dir = Path(__file__).parent.absolute()
+# curnt_dir = os.getcwd()
+UPLOAD_FOLDER = os.path.join(f'{curnt_dir}','uploads')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 CONTENT_FILE = 'content.txt'
 

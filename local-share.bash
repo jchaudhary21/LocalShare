@@ -1,5 +1,7 @@
-    local python_file=$(find ~/ -name "/home/jc/Desktop/advanceCopyPaste/local-share-server.py")
-
+    SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )    
+    local_file="/local-share-server.py"
+    python_file="${SCRIPT_DIR}${local_file}"
+           
     if [ ! -f "$python_file" ]; then
         echo "File '$python_file' does not exist."
         return 1
