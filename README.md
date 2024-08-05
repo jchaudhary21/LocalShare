@@ -35,7 +35,6 @@ The project has been tested with the following environment:
      # Insert the path to your local-share.bash file here
    }
    ```
-```Example```
 ![bashrc ss](/assets/bashrc_ss.png)
 
 4. Save the file (Ctrl + S) and exit the editor (Ctrl + X).
@@ -55,7 +54,6 @@ The project has been tested with the following environment:
 
 4. You can now view available files or upload new ones through the web interface.
 
-```Example```
 ![bashrc ss](/assets/LocalShare_ss.png)
 
 
